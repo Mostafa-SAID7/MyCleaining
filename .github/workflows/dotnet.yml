@@ -11,12 +11,13 @@ on:
 
 - job: BuildAndTest
   steps:
-    - task: UseDotNet@2
+    - task: DotNetCoreCLI@2
       displayName: 'Setup .NET'
       inputs:
         packageType: 'sdk'
         version: '7.x'
-    
+        command: restore
+        projects: '**/*.sln'  # This will find the solution file if you're in the root directory
     - script: echo "Some build or test steps"
       displayName: 'Build and test'
 
