@@ -1,0 +1,7 @@
+C:\Users\Mostafa\Desktop\prjs\C# prjs\MainTaskSolution\MainTask\bin\Debug\MainTask.exe.config
+C:\Users\Mostafa\Desktop\prjs\C# prjs\MainTaskSolution\MainTask\bin\Debug\MainTask.exe
+C:\Users\Mostafa\Desktop\prjs\C# prjs\MainTaskSolution\MainTask\bin\Debug\MainTask.pdb
+C:\Users\Mostafa\Desktop\prjs\C# prjs\MainTaskSolution\MainTask\obj\Debug\MainTask.csproj.AssemblyReference.cache
+C:\Users\Mostafa\Desktop\prjs\C# prjs\MainTaskSolution\MainTask\obj\Debug\MainTask.csproj.CoreCompileInputs.cache
+C:\Users\Mostafa\Desktop\prjs\C# prjs\MainTaskSolution\MainTask\obj\Debug\MainTask.exe
+C:\Users\Mostafa\Desktop\prjs\C# prjs\MainTaskSolution\MainTask\obj\Debug\MainTask.pdb
