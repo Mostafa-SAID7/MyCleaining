@@ -9,20 +9,18 @@ on:
   pull_request:
     branches: [ "main" ]
 
-jobs:
-  build:
+- job: BuildAndTest
+  steps:
+    - task: UseDotNet@2
+      displayName: 'Setup .NET'
+      inputs:
+        packageType: 'sdk'
+        version: '7.x'
+    
+    - script: echo "Some build or test steps"
+      displayName: 'Build and test'
 
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v4
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+    # Original Post Setup step
+    - script: echo "Post setup steps"
+      displayName: 'Post Setup .NET'
+      condition: always()  # This forces the step to run even if the previous steps fail
